@@ -1,0 +1,3 @@
+if ! git diff HEAD^ HEAD --exit-code -- ./package.json; then
+  echo "📦 package-lock.json changed. Run npm to bring your dependencies up to date."
+fi
